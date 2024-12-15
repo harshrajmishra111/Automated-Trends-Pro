@@ -7,4 +7,4 @@ import csv
 import pandas as pd
 import os
 import csv
-app
+app = Flask(__name__)
