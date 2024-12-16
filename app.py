@@ -8,3 +8,5 @@ import pandas as pd
 import os
 import csv
 app = Flask(__name__)
+
+# Create a scheduler
