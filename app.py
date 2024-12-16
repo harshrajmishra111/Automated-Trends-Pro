@@ -11,3 +11,5 @@ app = Flask(__name__)
 
 # Create a scheduler
 scheduler = BackgroundScheduler()
+
+def fetch_data
