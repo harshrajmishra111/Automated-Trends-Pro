@@ -12,4 +12,4 @@ app = Flask(__name__)
 # Create a scheduler
 scheduler = BackgroundScheduler()
 
-def fetch_data
+def fetch_data(search, country, language, selected_options, time_interval):
