@@ -14,3 +14,5 @@ scheduler = BackgroundScheduler()
 
 def fetch_data(search, country, language, selected_options, time_interval):
     pytrends = TrendReq(hl=language, tz=360, geo=country)
+    
+    print
