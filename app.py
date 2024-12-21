@@ -19,3 +19,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
     print(f"Selected Options: {selected_options}")
     print(f"Country: {country}")
     print(f"Language: {language}")
+    print
