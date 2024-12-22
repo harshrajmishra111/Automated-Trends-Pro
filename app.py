@@ -22,3 +22,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
     print(f"Auto Run Interval (hours): {time_interval}")
     
     if time_interval == 0:
+        print
