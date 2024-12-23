@@ -24,4 +24,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
     if time_interval == 0:
         print("The code will run once and stop.")
         
-    # Initialize a list to store the results for this run    
+    # Initialize a list to store the results for this run
+    result     
