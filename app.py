@@ -30,4 +30,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
     def delay_and_retry(func, max_retries=10, delay_seconds=20):
         for retry in range(max_retries):
             try:
-                return func()  
+                return func()
+            except  
