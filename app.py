@@ -28,4 +28,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
     result= [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]
     
     def delay_and_retry(func, max_retries=10, delay_seconds=20):
-        for    
+        for  retry  
