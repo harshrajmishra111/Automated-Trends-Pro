@@ -32,4 +32,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
             try:
                 return func()
             except Exception as e:
-                print 
+                print(f"Error in Option {option}: {e}") 
