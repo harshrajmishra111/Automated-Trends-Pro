@@ -31,4 +31,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
         for retry in range(max_retries):
             try:
                 return func()
-            except Exception as e: 
+            except Exception as e:
+                print 
