@@ -25,4 +25,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
         print("The code will run once and stop.")
         
     # Initialize a list to store the results for this run
-    result= [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]     
+    result= [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]
+    
+    def     
