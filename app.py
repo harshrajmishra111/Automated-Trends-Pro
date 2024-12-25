@@ -35,4 +35,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 print(f"Error in Option {option}: {e}")
                 print(f"Retrying in {delay_seconds} seconds. Retry {retry + 1}/{max_retries}") 
                 time.sleep(delay_seconds)
-                raise Exception("Max retries exceeded. Request still failed")
+        raise Exception("Max retries exceeded. Request still failed")
