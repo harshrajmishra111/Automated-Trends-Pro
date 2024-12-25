@@ -33,4 +33,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 return func()
             except Exception as e:
                 print(f"Error in Option {option}: {e}")
-                print 
+                print(f"Retrying in {delay_seconds} seconds. Retry {retry + 1}/{max_retries}") 
