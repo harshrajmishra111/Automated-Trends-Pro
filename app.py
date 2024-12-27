@@ -37,4 +37,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 time.sleep(delay_seconds)
         raise Exception("Max retries exceeded. Request still failed")
     
-    for option
+    for option in range
