@@ -43,3 +43,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
             try:
                 if option == 1:
                     delay_and_retry(lambda: pytrends.build_payload(kw_list=[search]))
+                    interest_over_time = delay_and_retry(lambda: pytrends.interest_over_time())
