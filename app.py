@@ -46,3 +46,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     interest_over_time = delay_and_retry(lambda: pytrends.interest_over_time())
                     interest_over_time = interest_over_time[interest_over_time[search] != 0]
                     result.append(interest_over_time.head(10).to_string())
+                elif option == 2:    
