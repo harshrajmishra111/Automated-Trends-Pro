@@ -39,3 +39,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
     
     for option in range(1, 10):
         if str(option) in selected_options:
+            # Fetch data for the selected option
