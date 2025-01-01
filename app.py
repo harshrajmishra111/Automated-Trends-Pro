@@ -49,4 +49,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 elif option == 2:
                     delay_and_retry(lambda: pytrends.build_payload(kw_list=[search]))
                     interest_by_region = delay_and_retry(lambda: pytrends.interest_by_region())
-                    result.append(interest_by_region.head(10).to_string())    
+                    result.append(interest_by_region.head(10).to_string())
+                    elif option == 3:    
