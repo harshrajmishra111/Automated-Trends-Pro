@@ -50,4 +50,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     delay_and_retry(lambda: pytrends.build_payload(kw_list=[search]))
                     interest_by_region = delay_and_retry(lambda: pytrends.interest_by_region())
                     result.append(interest_by_region.head(10).to_string())
-                elif option == 3:    
+                elif option == 3:
+                    print("Fetching data for Option 3: Trending Searches")    
