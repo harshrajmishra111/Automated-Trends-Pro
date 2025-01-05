@@ -53,4 +53,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 elif option == 3:
                     print("Fetching data for Option 3: Trending Searches")
                     trending_searches = delay_and_retry(lambda: pytrends.trending_searches())
-                    print("Data fetched successfully.")    
+                    print("Data fetched successfully.")
+                    result.append(trending_searches.head(10).to_string(header=False, index=False))    
