@@ -57,4 +57,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     result.append(trending_searches.head(10).to_string(header=False, index=False))
                 elif option == 4:
                     top_charts = delay_and_retry(lambda: pytrends.top_charts(2023, hl=language, tz=360, geo=country))
-                    if top_charts is not None:        
+                    if top_charts is not None:
+                        result.append(top_charts.to_string(index=False))        
