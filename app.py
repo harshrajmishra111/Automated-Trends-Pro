@@ -60,4 +60,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     if top_charts is not None:
                         result.append(top_charts.to_string(index=False))
                     else:
-                        result.append            
+                        result.append("Option 4 - Google Top Charts: No data available")            
