@@ -65,4 +65,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 # Option 5: Related Queries
                 elif option == 5:
                     print("Fetching data for Option 5: Related Queries")
-                    try:                   
+                    try:
+                        delay_and_retry(lambda: pytrends.build_payload(kw_list=[search], timeframe='now 1-d'))                   
