@@ -64,4 +64,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         
                 # Option 5: Related Queries
                 elif option == 5:
-                    int("Fetching data for Option 5: Related Queries")                   
+                    print("Fetching data for Option 5: Related Queries")                   
