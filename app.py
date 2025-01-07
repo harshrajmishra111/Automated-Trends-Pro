@@ -63,4 +63,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         result.append("Option 4 - Google Top Charts: No data available")
                         
                 # Option 5: Related Queries
-                elif                    
+                elif ption == 5:                   
