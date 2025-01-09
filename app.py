@@ -67,4 +67,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     print("Fetching data for Option 5: Related Queries")
                     try:
                         delay_and_retry(lambda: pytrends.build_payload(kw_list=[search], timeframe='now 1-d')) #<------here you can change the days accorging to you prefrence for example just put "7-d" for 7
-                        related_queries = delay_and_retry(lambda: pytrends.related_queries()[search]['top'])                    
+                        related_queries = delay_and_retry(lambda: pytrends.related_queries()[search]['top'])
+                        related_queries['percentage'] = related_queries['value'].apply(lambda x: "{:.2f}%".format(x))                    
