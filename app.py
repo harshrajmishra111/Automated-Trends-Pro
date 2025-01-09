@@ -74,4 +74,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         data = [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]
                         for i in range(min(25, len(related_queries))):
                             query = related_queries.iloc[i]['query']
-                            percentage = related_queries.iloc[i]['percentage']                    
+                            percentage = related_queries.iloc[i]['percentage']
+                            data.extend([query, percentage])                    
