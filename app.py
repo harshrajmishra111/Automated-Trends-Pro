@@ -73,4 +73,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         # Prepare the data to be stored in the CSV file
                         data = [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]
                         for i in range(min(25, len(related_queries))):
-                            query = related_queries.iloc[i]['query']                    
+                            query = related_queries.iloc[i]['query']
+                            percentage = related_queries.iloc[i]['percentage']                    
