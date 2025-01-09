@@ -70,4 +70,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         related_queries = delay_and_retry(lambda: pytrends.related_queries()[search]['top'])
                         related_queries['percentage'] = related_queries['value'].apply(lambda x: "{:.2f}%".format(x))
                         
-                        # Prepare the data to be stored in the CSV file                    
+                        # Prepare the data to be stored in the CSV file
+                        data = [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]                    
