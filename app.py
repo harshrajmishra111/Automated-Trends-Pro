@@ -77,4 +77,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             percentage = related_queries.iloc[i]['percentage']
                             data.extend([query, percentage])
                             
-                        # Define the CSV file path                        
+                        # Define the CSV file path
+                        csv_file_path = "related_queries_data.csv"                        
