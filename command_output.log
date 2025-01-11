@@ -1,0 +1,11 @@
+
+Command: shopt -s histappend
+Output:
+
+Exit Code: 0
+----
+Command: pwd
+Output:
+/Users/harshrajmishra/Documents/Automated Trends Pro/Automated-Trends-Pro
+Exit Code: 0
+----
