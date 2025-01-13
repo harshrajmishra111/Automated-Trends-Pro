@@ -88,4 +88,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             writer = csv.writer(file)
                             
                             # Write the header row if the file doesn't exist
-                            if not file_exists:                        
+                            if not file_exists:
+                                header = ['Keyword', 'Date']                        
