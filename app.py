@@ -92,4 +92,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                 header = ['Keyword', 'Date']
                                 for i in range(1, 26):
                                     header.extend([f'Related Query {i}', f'Percentage {i}'])
-                                    writer.writerow(header)                        
+                                    writer.writerow(header)
+                                    
+                            writer.writerow(data)                            
