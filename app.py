@@ -105,5 +105,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 elif option == 6:
                     print("Fetching data for Option 6: Related Topics")
                     try:
-                        delay_and_retry(lambda: pytrends.build_payload(kw_list=[search], timeframe='now 1-d')) 
+                        delay_and_retry(lambda: pytrends.build_payload(kw_list=[search], timeframe='now 1-d')) #<------here you can change the days accorging to you prefrence for example just put "7-d" for 7 days and "1-d" for 1 day
                                                            
