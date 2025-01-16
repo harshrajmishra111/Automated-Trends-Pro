@@ -107,4 +107,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     try:
                         delay_and_retry(lambda: pytrends.build_payload(kw_list=[search], timeframe='now 1-d')) #<------here you can change the days accorging to you prefrence for example just put "7-d" for 7 days and "1-d" for 1 day
                         related_topics = delay_and_retry(lambda: pytrends.related_topics()[search]['rising'])
-                        if related_topics is not None and not related_topics.empty:                                   
+                        if related_topics is not None and not related_topics.empty:
+                            related_topics['percentage'] = related_topics['value'].apply(lambda x: "{:.2f}%".format(x))                                   
