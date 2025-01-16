@@ -103,4 +103,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         
                         
                 elif option == 6:
-                    print("Fetching data for Option 6: Related Topics")                                        
+                    print("Fetching data for Option 6: Related Topics")
+                    try: 
+                                                           
