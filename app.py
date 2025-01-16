@@ -98,4 +98,9 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             
                         result.append("Data stored in the CSV file.")
                         
-                    except KeyError:                                
+                    except KeyError:
+                        result.append("No top queries data available")
+                        
+                        
+                elif option == 6:
+                    print("Fetching data for Option 6: Related Topics")                                        
