@@ -117,4 +117,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                 percentage = related_topics.iloc[i]['percentage']
                                 data.extend([topic, percentage])
                                 
-                            # Define the CSV file path                                       
+                            # Define the CSV file path
+                            csv_file_path = "related_topics_data.csv"                                       
