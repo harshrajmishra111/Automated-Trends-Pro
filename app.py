@@ -114,4 +114,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             data = [search, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')]
                             for i in range(min(25, len(related_topics))):
                                 topic = related_topics.iloc[i]['topic_title']
-                                percentage = related_topics.iloc[i]['percentage']                                   
+                                percentage = related_topics.iloc[i]['percentage']
+                                data.extend([topic, percentage])                                   
