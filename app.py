@@ -120,4 +120,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             # Define the CSV file path
                             csv_file_path = "related_topics_data.csv"
                             
-                            # Check if the CSV file already exists                                       
+                            # Check if the CSV file already exists
+                            file_exists = os.path.isfile(csv_file_path)                                       
