@@ -118,4 +118,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                 data.extend([topic, percentage])
                                 
                             # Define the CSV file path
-                            csv_file_path = "related_topics_data.csv"                                       
+                            csv_file_path = "related_topics_data.csv"
+                            
+                            # Check if the CSV file already exists                                       
