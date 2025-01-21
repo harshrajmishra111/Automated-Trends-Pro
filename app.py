@@ -123,4 +123,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             # Check if the CSV file already exists
                             file_exists = os.path.isfile(csv_file_path)
                             
-                            # Write the data to the CSV file                                       
+                            # Write the data to the CSV file
+                            with open(csv_file_path, 'a', newline='') as file:                                       
