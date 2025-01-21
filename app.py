@@ -125,4 +125,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             
                             # Write the data to the CSV file
                             with open(csv_file_path, 'a', newline='') as file:
-                                writer = csv.writer(file)                                       
+                                writer = csv.writer(file) 
+                                
+                                # Write the header row if the file doesn't exist                                      
