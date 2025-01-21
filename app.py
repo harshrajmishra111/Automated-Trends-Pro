@@ -127,4 +127,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                             with open(csv_file_path, 'a', newline='') as file:
                                 writer = csv.writer(file) 
                                 
-                                # Write the header row if the file doesn't exist                                      
+                                # Write the header row if the file doesn't exist
+                                if not file_exists:                                      
