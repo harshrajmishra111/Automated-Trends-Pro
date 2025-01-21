@@ -130,4 +130,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                 # Write the header row if the file doesn't exist
                                 if not file_exists:
                                     header = ['Keyword', 'Date']
-                                    for i in range(1, min(26, len(related_topics) + 1)):                                      
+                                    for i in range(1, min(26, len(related_topics) + 1)):
+                                        header.extend([f'Related Topic {i}', f'Percentage {i}'])
+                                                                      
