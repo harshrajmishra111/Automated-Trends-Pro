@@ -136,5 +136,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                     
                                 writer.writerow(data)
                                 
-                            result.append("Data stored in the CSV file.")            
+                            result.append("Data stored in the CSV file.")
+                        else:                
                                                                       
