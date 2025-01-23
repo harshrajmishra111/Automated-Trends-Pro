@@ -134,5 +134,7 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                         header.extend([f'Related Topic {i}', f'Percentage {i}'])
                                     writer.writerow(header)
                                     
-                                writer.writerow(data)        
+                                writer.writerow(data)
+                                
+                            result.append("Data stored in the CSV file.")            
                                                                       
