@@ -138,5 +138,7 @@ def fetch_data(search, country, language, selected_options, time_interval):
                                 
                             result.append("Data stored in the CSV file.")
                         else:
-                            result.append("No top topics data available")                
+                            result.append("No top topics data available")
+                           
+                    except Exception as e:                        
                                                                       
