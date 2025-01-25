@@ -140,5 +140,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         else:
                             result.append("No top topics data available")
                            
-                    except Exception as e:                        
+                    except Exception as e:
+                        error_message = f"Error in Option 6: {e}"                        
                                                                       
