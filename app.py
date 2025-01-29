@@ -151,5 +151,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         end_date = pd.Timestamp.now()
                         start_date = end_date - pd.DateOffset(days=10)
                         start_date_str = start_date.strftime('%Y-%m-%d')
-                        end_date_str = end_date.strftime('%Y-%m-%d')                                
+                        end_date_str = end_date.strftime('%Y-%m-%d')
+                        delay_and_retry(lambda: pytrends.build_payload([search], cat=0, timeframe=f'{start_date_str} {end_date_str}', geo='', gprop=''))                                
                                                                       
