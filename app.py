@@ -150,5 +150,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     try:
                         end_date = pd.Timestamp.now()
                         start_date = end_date - pd.DateOffset(days=10)
-                        start_date_str = start_date.strftime('%Y-%m-%d')                                
+                        start_date_str = start_date.strftime('%Y-%m-%d')
+                        end_date_str = end_date.strftime('%Y-%m-%d')                                
                                                                       
