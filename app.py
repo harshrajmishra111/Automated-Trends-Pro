@@ -147,5 +147,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 
                 elif option == 7:
                     print("Fetching data for Option 7: Multi-Interest Over Time (Past 7 days)")
-                    try:                                
+                    try:
+                        end_date = pd.Timestamp.now()                                
                                                                       
