@@ -146,5 +146,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         result.append(error_message)
                 
                 elif option == 7:
-                    print("Fetching data for Option 7: Multi-Interest Over Time (Past 7 days)")                                
+                    print("Fetching data for Option 7: Multi-Interest Over Time (Past 7 days)")
+                    try:                                
                                                                       
