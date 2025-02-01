@@ -155,4 +155,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         delay_and_retry(lambda: pytrends.build_payload([search], cat=0, timeframe=f'{start_date_str} {end_date_str}', geo='', gprop=''))                                
                         multi_interest = delay_and_retry(lambda: pytrends.interest_over_time())
                         
-                        # Add the date as a separate column                                              
+                        # Add the date as a separate column
+                        multi_interest['Date'] = multi_interest.index.date                                              
