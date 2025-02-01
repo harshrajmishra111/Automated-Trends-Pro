@@ -156,4 +156,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         multi_interest = delay_and_retry(lambda: pytrends.interest_over_time())
                         
                         # Add the date as a separate column
-                        multi_interest['Date'] = multi_interest.index.date                                              
+                        multi_interest['Date'] = multi_interest.index.date
+                        
+                        result.append(multi_interest.to_string(index=False))                                              
