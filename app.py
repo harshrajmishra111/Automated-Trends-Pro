@@ -160,4 +160,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         
                         result.append(multi_interest.to_string(index=False))
                     except Exception as e:
-                        error_message = f"Error in Option 7: {e}"                                                  
+                        error_message = f"Error in Option 7: {e}"
+                        print(error_message)                                                  
