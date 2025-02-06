@@ -164,4 +164,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         print(error_message)
                         result.append(error_message)
                 
-                elif option == 8:                                                          
+                elif option == 8:
+                    print("Fetching data for Option 8: Historical Hourly Data (Past 7 days)")                                                          
