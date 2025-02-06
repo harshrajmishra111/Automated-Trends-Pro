@@ -168,4 +168,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     print("Fetching data for Option 8: Historical Hourly Data (Past 7 days)")
                     end_date = datetime.datetime.now() - datetime.timedelta(days=1)
                     start_date = end_date - datetime.timedelta(days=7)
-                    start_date_str = start_date.strftime('%Y-%m-%d')                                                          
+                    start_date_str = start_date.strftime('%Y-%m-%d')
+                    end_date_str = end_date.strftime('%Y-%m-%d')                                                          
