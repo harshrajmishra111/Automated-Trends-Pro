@@ -162,4 +162,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     except Exception as e:
                         error_message = f"Error in Option 7: {e}"
                         print(error_message)
-                        result.append(error_message)                                                  
+                        result.append(error_message)
+                
+                elif option == 8:                                                          
