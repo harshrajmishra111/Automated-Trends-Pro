@@ -176,4 +176,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         day_end = day_start + datetime.timedelta(days=1)
                         day_start_str = day_start.strftime('%Y-%m-%d')
                         day_end_str = day_end.strftime('%Y-%m-%d')
-                        delay_and_retry(lambda: pytrends.build_payload([search], cat=0, timeframe=f'{day_start_str} {day_end_str}', geo='', gprop=''))                                                          
+                        delay_and_retry(lambda: pytrends.build_payload([search], cat=0, timeframe=f'{day_start_str} {day_end_str}', geo='', gprop=''))
+                        hourly_interest = delay_and_retry(lambda: pytrends.interest_over_time())                                                          
