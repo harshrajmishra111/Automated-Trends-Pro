@@ -171,4 +171,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     start_date_str = start_date.strftime('%Y-%m-%d')
                     end_date_str = end_date.strftime('%Y-%m-%d')
                     hourly_data = pd.DataFrame()
-                    for i in range(7):                                                          
+                    for i in range(7):
+                        day_start = start_date + datetime.timedelta(days=i)                                                          
