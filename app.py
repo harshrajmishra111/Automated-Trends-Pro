@@ -174,4 +174,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     for i in range(7):
                         day_start = start_date + datetime.timedelta(days=i)
                         day_end = day_start + datetime.timedelta(days=1)
-                        day_start_str = day_start.strftime('%Y-%m-%d')                                                          
+                        day_start_str = day_start.strftime('%Y-%m-%d')
+                        day_end_str = day_end.strftime('%Y-%m-%d')                                                          
