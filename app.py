@@ -180,4 +180,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         hourly_interest = delay_and_retry(lambda: pytrends.interest_over_time()) 
                         
                         # Convert the index to a 'Date' column
-                        hourly_interest.reset_index(inplace=True)                                                         
+                        hourly_interest.reset_index(inplace=True)
+                        
+                        hourly_data = pd.concat([hourly_data, hourly_interest])                                                         
