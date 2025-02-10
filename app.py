@@ -182,4 +182,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         # Convert the index to a 'Date' column
                         hourly_interest.reset_index(inplace=True)
                         
-                        hourly_data = pd.concat([hourly_data, hourly_interest])                                                         
+                        hourly_data = pd.concat([hourly_data, hourly_interest])
+                        time.sleep(10)  # Delay for 10 seconds to avoid rate limiting                                                         
