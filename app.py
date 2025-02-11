@@ -196,4 +196,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
             
     # Save the result to a CSV file
     output_file = 'output_data.csv'
-    with open(output_file, mode='a', newline='') as file:                                                                                 
+    with open(output_file, mode='a', newline='') as file:
+        writer = csv.writer(file)                                                                                 
