@@ -192,4 +192,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                 result.append(f"Error in Option {option}: {e}")
                 
         else:
-            result.append("Option not selected")                                                                         
+            result.append("Option not selected")
+            
+    # Save the result to a CSV file                                                                                 
