@@ -186,4 +186,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                         time.sleep(10)  # Delay for 10 seconds to avoid rate limiting
                         
                     hourly_data = hourly_data[hourly_data[search] > 0]
-                    result.append(hourly_data.to_string(index=False))                                                             
+                    result.append(hourly_data.to_string(index=False))
+                    
+            except Exception as e:                                                                 
