@@ -189,4 +189,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
                     result.append(hourly_data.to_string(index=False))
                     
             except Exception as e:
-                result.append(f"Error in Option {option}: {e}")                                                                 
+                result.append(f"Error in Option {option}: {e}")
+                
+        else:                                                                         
