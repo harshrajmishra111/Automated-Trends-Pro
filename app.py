@@ -191,4 +191,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
             except Exception as e:
                 result.append(f"Error in Option {option}: {e}")
                 
-        else:                                                                         
+        else:
+            result.append("Option not selected")                                                                         
