@@ -194,4 +194,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
         else:
             result.append("Option not selected")
             
-    # Save the result to a CSV file                                                                                 
+    # Save the result to a CSV file
+    output_file = 'output_data.csv'                                                                                 
