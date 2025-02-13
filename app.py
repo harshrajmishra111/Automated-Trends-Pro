@@ -201,4 +201,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
         if os.path.getsize(output_file) == 0:
             # Write the header row if the file is empty
             writer.writerow(['Keyword', 'Date & Time', 'Interest over Time', 'Interest by Region', 'Trending Searches', 'Top Charts', 'Related Topics', 'Keyword Suggestions', 'Multi Interest', 'Hourly Data'])                                                                                 
-        writer.writerow(result)    
+        writer.writerow(result)
+        
+    # Print the result in the terminal        
