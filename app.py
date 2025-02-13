@@ -198,4 +198,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
     output_file = 'output_data.csv'
     with open(output_file, mode='a', newline='') as file:
         writer = csv.writer(file)
-        if os.path.getsize(output_file) == 0:                                                                                 
+        if os.path.getsize(output_file) == 0:
+            
+            writer.writerow(['Keyword', 'Date & Time', 'Interest over Time', 'Interest by Region', 'Trending Searches', 'Top Charts', 'Related Topics', 'Keyword Suggestions', 'Multi Interest', 'Hourly Data'])                                                                                 
