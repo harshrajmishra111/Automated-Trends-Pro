@@ -203,4 +203,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
             writer.writerow(['Keyword', 'Date & Time', 'Interest over Time', 'Interest by Region', 'Trending Searches', 'Top Charts', 'Related Topics', 'Keyword Suggestions', 'Multi Interest', 'Hourly Data'])                                                                                 
         writer.writerow(result)
         
-    # Print the result in the terminal        
+    # Print the result in the terminal
+    print(result)        
