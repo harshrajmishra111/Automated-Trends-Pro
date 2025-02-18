@@ -207,4 +207,5 @@ def fetch_data(search, country, language, selected_options, time_interval):
     print(result)   
     
     
-    @app.route('/', methods=['POST', 'GET'])     
+@app.route('/', methods=['POST', 'GET'])
+def index():
