@@ -211,3 +211,6 @@ def fetch_data(search, country, language, selected_options, time_interval):
 def index():
     if request.method == 'POST':
         country = request.form.get('countrySelect')
+        language = request.form.get('languageSelect')
+        
+        
