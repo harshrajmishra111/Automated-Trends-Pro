@@ -220,6 +220,7 @@ def index():
         partial_fetch_data(search, country, language, selected_options, time_interval)
         
         if time_interval > 0:
+            # Schedule data fetch if the time interval is greater than 0
         
         
         
