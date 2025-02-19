@@ -219,5 +219,7 @@ def index():
         partial_fetch_data = fetch_data
         partial_fetch_data(search, country, language, selected_options, time_interval)
         
+        if time_interval > 0:
+        
         
         
