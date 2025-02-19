@@ -210,3 +210,4 @@ def fetch_data(search, country, language, selected_options, time_interval):
 @app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
+        country = request.form.get('countrySelect')
