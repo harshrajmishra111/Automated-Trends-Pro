@@ -212,5 +212,6 @@ def index():
     if request.method == 'POST':
         country = request.form.get('countrySelect')
         language = request.form.get('languageSelect')
+        search = request.form.get('Keyword')
         
         
