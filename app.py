@@ -220,3 +220,4 @@ def index():
         partial_fetch_data(search, country, language, selected_options, time_interval)
         
         
+        
