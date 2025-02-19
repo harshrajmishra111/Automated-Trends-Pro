@@ -216,5 +216,6 @@ def index():
         selected_options = request.form.getlist('output-checkbox')
         time_interval = int(request.form.get('TimeInterval'))
         
+        partial_fetch_data = fetch_data
         
         
