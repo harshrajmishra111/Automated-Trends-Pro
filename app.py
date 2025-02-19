@@ -217,5 +217,6 @@ def index():
         time_interval = int(request.form.get('TimeInterval'))
         
         partial_fetch_data = fetch_data
+        partial_fetch_data(search, country, language, selected_options, time_interval)
         
         
