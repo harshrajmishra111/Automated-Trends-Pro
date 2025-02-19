@@ -213,5 +213,6 @@ def index():
         country = request.form.get('countrySelect')
         language = request.form.get('languageSelect')
         search = request.form.get('Keyword')
+        selected_options = request.form.getlist('output-checkbox')
         
         
