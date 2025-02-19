@@ -214,5 +214,6 @@ def index():
         language = request.form.get('languageSelect')
         search = request.form.get('Keyword')
         selected_options = request.form.getlist('output-checkbox')
+        time_interval = int(request.form.get('TimeInterval'))
         
         
