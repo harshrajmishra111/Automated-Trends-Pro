@@ -221,6 +221,7 @@ def index():
         
         if time_interval > 0:
             # Schedule data fetch if the time interval is greater than 0
+            schedule_data_fetch(search, country, language, selected_options, time_interval)
         
         
         
