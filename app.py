@@ -226,6 +226,7 @@ def index():
     return render_template('index.html', error_message='')
 
 def schedule_data_fetch(search, country, language, selected_options, time_interval):
+    partial_fetch_data = fetch_data
 
 
         
