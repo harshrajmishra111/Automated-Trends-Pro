@@ -228,6 +228,7 @@ def index():
 def schedule_data_fetch(search, country, language, selected_options, time_interval):
     partial_fetch_data = fetch_data
     # Schedule the data fetch task at the specified time interval
+    
 
 
         
