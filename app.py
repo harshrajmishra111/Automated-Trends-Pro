@@ -223,7 +223,12 @@ def index():
             # Schedule data fetch if the time interval is greater than 0
             schedule_data_fetch(search, country, language, selected_options, time_interval)
             
-    return render_template('index.html', error_message='')        
+    return render_template('index.html', error_message='')
+
+def schedule_data_fetch(search, country, language, selected_options, time_interval):
+
+
+        
         
         
         
