@@ -233,7 +233,7 @@ def schedule_data_fetch(search, country, language, selected_options, time_interv
     
 if __name__ == '__main__':
     scheduler.start()
-    app.run()    
+    app.run    
     
 
 
