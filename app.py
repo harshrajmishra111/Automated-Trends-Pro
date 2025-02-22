@@ -232,7 +232,8 @@ def schedule_data_fetch(search, country, language, selected_options, time_interv
                       hours=time_interval, id='data_fetch_job', replace_existing=True)
     
 if __name__ == '__main__':
-    scheduler.start()    
+    scheduler.start()
+    app.    
     
 
 
